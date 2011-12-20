@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Harm Aarts" />
+    <title>Classes and objects</title>
+    <link rel="shortcut icon" href="/favicon.ico">
+  </head>
+  <body>
+    <div class="container">
+      <div class='row'>
+  Classes
+</div><div class='row'>
+  <div class='span12'>
+    <pre class='pretty-print'>
+      class Sheep
+        def initialize #constructor
+        end
+
+        def self.number_of_feet #class method
+          4
+        end
+
+        def name #instance method
+          'dolly'
+        end
+      end
+
+
+      sheep = Sheep.new
+
+      puts sheep.name
+
+      puts Sheep.number_of_feet
+    </pre>
+  </div>
+  <div class='span4'>
+    Constructors
+    Class methods
+    Instance methods
+  </div>
+</div>
+
+    </div> <!--! end of #container -->
+  </body>
+</html>

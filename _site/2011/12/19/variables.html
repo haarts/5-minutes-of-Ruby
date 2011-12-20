@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Harm Aarts" />
+    <title>Variables in Ruby</title>
+    <link rel="shortcut icon" href="/favicon.ico">
+  </head>
+  <body>
+    <div class="container">
+      <div class='container'>
+<div class='row'>
+      <h2>Variables</h2>
+</div>
+<div class='row'>
+<div class='span12'>
+<pre class='prettyprint'>
+i   = 0 #local
+@i  = 1 #instance
+@@i = 1 #class
+$i  = 1 #global
+class Person
+def full_name
+<ol>
+	<li>define the local variable first_name<br />
+            full_name = @first_name + &quot; &quot; + @last_name <br />
+            return full_name<br />
+          end</li>
+</ol>
+def first_name=(first_name)
+@first_name = first_name #assign the instance variable @first_name
+end
+end
+</pre>
+</div>
+<div class='span4'>
+Variables are scoped.
+Different variables are scoped differently.
+A local variable is scoped with a function, loop or block.
+An instance variable is shared in the instance of an object.
+A class variable is shared across all instances of an object.
+A global variable is shared with everything in the currently executing code.
+A local variable is the preferred way of using variables.
+An instance variable has some pretty good use cases.
+A class variable is code smell. This is rarely a good idea.
+A global variable is downright evil and should never be used.
+</div>
+</div>
+
+    </div> <!--! end of #container -->
+  </body>
+</html>
