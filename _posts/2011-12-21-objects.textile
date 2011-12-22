@@ -1,0 +1,35 @@
+---
+layout: post
+title: Objects everywhere
+---
+<div class='container'>
+  <div class='row'>
+    <h2>Variables</h2>
+  </div>
+  <div class='row'>
+    <div class='span12'>
+      <pre class='prettyprint'>
+        puts 1 + 1
+        puts 1.+(1)
+
+        foo = 'hi there!'
+
+        def foo.say_twice
+          self.to_s + ' ' + self.to_s
+        end
+
+        puts foo.say_twice
+
+        class Fixnum
+          def hour_in_seconds
+            self.to_i * 60
+          end
+        end
+
+        puts 4.hour_in_seconds
+      </pre>
+  </div>
+  <div class='span4'>
+  </div>
+</div>
+
