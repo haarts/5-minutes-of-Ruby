@@ -2,25 +2,25 @@
 layout: post
 title: Variables in Ruby
 ---
-<div class='container'>
-  <div class='row'>
-      <h2>Variables</h2>
-  </div>
-  <div class='row'>
-    <div class='span12'>
-      <pre class='prettyprint'>
-        i   = 0 #local
-        @i  = 1 #instance
-        @@i = 1 #class
-        $i  = 1 #global
 
-        class Person
-          def full_name
-            # define the local variable first_name
-            full_name = @first_name + " " + @last_name 
-            return full_name
-          end
-          
+<div class='row'>
+    <h2>Variables</h2>
+</div>
+<div class='row'>
+  <div class='span12'>
+    <pre class='prettyprint'>
+      i   = 0 #local
+      @i  = 1 #instance
+      @@i = 1 #class
+      $i  = 1 #global
+
+      class Person
+        def full_name
+          # define the local variable first_name
+          full_name = @first_name + " " + @last_name 
+          return full_name
+        end
+        
         def first_name=(first_name)
           @first_name = first_name #assign the instance variable @first_name
         end
